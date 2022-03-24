@@ -1,0 +1,1602 @@
+[
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[-0.0010495036840438843, 0.004458427429199219, 0.35296720266342163, 0.3474592864513397]",
+            "classes": "couch",
+            "scores": "0.6328125"
+          },
+          {
+            "boxes": "[0.14544853568077087, -0.01586538553237915, 0.9682680368423462, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.609375"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 16:00:47.627042",
+    "EventProcessedUtcTime": "2021-07-26T14:25:45.6042582Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T14:00:47.7180000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T14:00:47.6400000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0025053471326828003, 0.0014475733041763306, 0.3606317639350891, 0.3484302759170532]",
+            "classes": "couch",
+            "scores": "0.64453125"
+          },
+          {
+            "boxes": "[0.13889431953430176, -0.01586538553237915, 0.9748222827911377, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.59765625"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 16:00:37.352411",
+    "EventProcessedUtcTime": "2021-07-26T14:25:45.6042582Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T14:00:37.4730000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T14:00:37.3640000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0017262250185012817, 0.0016400814056396484, 0.35019147396087646, 0.3392622470855713]",
+            "classes": "couch",
+            "scores": "0.64453125"
+          },
+          {
+            "boxes": "[0.1313977837562561, -0.01586538553237915, 0.967325747013092, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.59765625"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 16:00:27.090376",
+    "EventProcessedUtcTime": "2021-07-26T14:25:45.6042582Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T14:00:27.2340000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T14:00:27.1060000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0017262250185012817, 0.004393935203552246, 0.35019147396087646, 0.3420161008834839]",
+            "classes": "couch",
+            "scores": "0.62109375"
+          },
+          {
+            "boxes": "[0.13889431953430176, -0.01586538553237915, 0.9748222827911377, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.59765625"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 16:00:16.811670",
+    "EventProcessedUtcTime": "2021-07-26T14:25:45.6042582Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T14:00:16.9630000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T14:00:16.8230000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0017043501138687134, 0.0016400814056396484, 0.35572105646133423, 0.3392622470855713]",
+            "classes": "couch",
+            "scores": "0.6328125"
+          },
+          {
+            "boxes": "[0.1313977837562561, -0.01586538553237915, 0.967325747013092, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.59765625"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 16:00:06.516337",
+    "EventProcessedUtcTime": "2021-07-26T14:25:45.6042582Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T14:00:06.6540000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T14:00:06.5290000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0017262250185012817, 0.004393935203552246, 0.35019147396087646, 0.3420161008834839]",
+            "classes": "couch",
+            "scores": "0.64453125"
+          },
+          {
+            "boxes": "[0.13889431953430176, -0.01586538553237915, 0.9748222827911377, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.609375"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:59:56.246530",
+    "EventProcessedUtcTime": "2021-07-26T14:25:45.6042582Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:59:56.3460000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:59:56.2520000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0025053471326828003, -0.0018672347068786621, 0.3606317639350891, 0.34511545300483704]",
+            "classes": "couch",
+            "scores": "0.64453125"
+          },
+          {
+            "boxes": "[0.1313977837562561, -0.01586538553237915, 0.967325747013092, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.59765625"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:59:45.984074",
+    "EventProcessedUtcTime": "2021-07-26T14:25:45.6042582Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:59:46.1360000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:59:45.9960000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0017262250185012817, 0.0016400814056396484, 0.35019147396087646, 0.3392622470855713]",
+            "classes": "couch",
+            "scores": "0.62109375"
+          },
+          {
+            "boxes": "[0.14544853568077087, -0.01586538553237915, 0.9682680368423462, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.609375"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:59:35.713579",
+    "EventProcessedUtcTime": "2021-07-26T14:25:45.6042582Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:59:35.8050000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:59:35.7270000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[-0.0010495036840438843, 0.004393935203552246, 0.35296720266342163, 0.3420161008834839]",
+            "classes": "couch",
+            "scores": "0.6328125"
+          },
+          {
+            "boxes": "[0.13889431953430176, -0.01586538553237915, 0.9748222827911377, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.59765625"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:59:25.436723",
+    "EventProcessedUtcTime": "2021-07-26T14:25:45.6042582Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:59:25.4920000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:59:25.4450000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[-0.0010495036840438843, 0.004393935203552246, 0.35296720266342163, 0.3420161008834839]",
+            "classes": "couch",
+            "scores": "0.62109375"
+          },
+          {
+            "boxes": "[0.1313977837562561, -0.01586538553237915, 0.967325747013092, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.5859375"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:59:15.147969",
+    "EventProcessedUtcTime": "2021-07-26T14:25:45.6042582Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:59:15.2760000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:59:15.1760000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0017262250185012817, 0.0016400814056396484, 0.35019147396087646, 0.3392622470855713]",
+            "classes": "couch",
+            "scores": "0.62109375"
+          },
+          {
+            "boxes": "[0.14544853568077087, -0.01586538553237915, 0.9682680368423462, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.59765625"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:59:04.827035",
+    "EventProcessedUtcTime": "2021-07-26T14:25:44.5934898Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:59:05.6980000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:59:04.8380000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0017262250185012817, 0.001704588532447815, 0.35019147396087646, 0.3447054624557495]",
+            "classes": "couch",
+            "scores": "0.6328125"
+          },
+          {
+            "boxes": "[0.14544853568077087, -0.01586538553237915, 0.9682680368423462, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.5859375"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:58:54.575825",
+    "EventProcessedUtcTime": "2021-07-26T14:25:44.5934898Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:58:54.6640000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:58:54.5860000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[-0.0010495036840438843, 0.004393935203552246, 0.35296720266342163, 0.3420161008834839]",
+            "classes": "couch",
+            "scores": "0.62109375"
+          },
+          {
+            "boxes": "[0.13889431953430176, -0.023361951112747192, 0.9748222827911377, 0.9871469736099243]",
+            "classes": "bed",
+            "scores": "0.5859375"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:58:44.288914",
+    "EventProcessedUtcTime": "2021-07-26T14:25:44.5934898Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:58:44.4190000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:58:44.3060000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0017262250185012817, 0.004393935203552246, 0.35019147396087646, 0.3420161008834839]",
+            "classes": "couch",
+            "scores": "0.6328125"
+          },
+          {
+            "boxes": "[0.1313977837562561, -0.01586538553237915, 0.967325747013092, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.59765625"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:58:34.026170",
+    "EventProcessedUtcTime": "2021-07-26T14:25:44.5934898Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:58:34.0710000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:58:34.0240000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0017262250185012817, 0.004393935203552246, 0.35019147396087646, 0.3420161008834839]",
+            "classes": "couch",
+            "scores": "0.62109375"
+          },
+          {
+            "boxes": "[0.14544853568077087, -0.01586538553237915, 0.9682680368423462, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.609375"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:58:23.748183",
+    "EventProcessedUtcTime": "2021-07-26T14:25:44.5934898Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:58:23.8070000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:58:23.7610000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[-0.0010495036840438843, 0.004458427429199219, 0.35296720266342163, 0.3474592864513397]",
+            "classes": "couch",
+            "scores": "0.64453125"
+          },
+          {
+            "boxes": "[0.1313977837562561, -0.01586538553237915, 0.967325747013092, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.59765625"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:58:13.417676",
+    "EventProcessedUtcTime": "2021-07-26T14:25:44.5934898Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:58:13.5260000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:58:13.4950000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0017262250185012817, 0.0016400814056396484, 0.35019147396087646, 0.3392622470855713]",
+            "classes": "couch",
+            "scores": "0.62109375"
+          },
+          {
+            "boxes": "[0.13889431953430176, -0.01586538553237915, 0.9748222827911377, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.609375"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:58:03.132687",
+    "EventProcessedUtcTime": "2021-07-26T14:25:44.0803100Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:58:03.2490000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:58:03.1400000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0017262250185012817, 0.0016400814056396484, 0.35019147396087646, 0.3392622470855713]",
+            "classes": "couch",
+            "scores": "0.6328125"
+          },
+          {
+            "boxes": "[0.13889431953430176, -0.01586538553237915, 0.9748222827911377, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.5859375"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:57:52.864829",
+    "EventProcessedUtcTime": "2021-07-26T14:25:44.0803100Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:57:52.9730000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:57:52.8790000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[-0.0010495036840438843, 0.0016400814056396484, 0.35296720266342163, 0.3392622470855713]",
+            "classes": "couch",
+            "scores": "0.62109375"
+          },
+          {
+            "boxes": "[0.1313977837562561, -0.01586538553237915, 0.967325747013092, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.59765625"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:57:42.584734",
+    "EventProcessedUtcTime": "2021-07-26T14:25:44.0803100Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:57:42.7170000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:57:42.5920000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0017262250185012817, 0.004393935203552246, 0.35019147396087646, 0.3420161008834839]",
+            "classes": "couch",
+            "scores": "0.64453125"
+          },
+          {
+            "boxes": "[0.14544853568077087, -0.01586538553237915, 0.9682680368423462, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.59765625"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:57:32.297073",
+    "EventProcessedUtcTime": "2021-07-26T14:25:44.0803100Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:57:32.4930000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:57:32.3050000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[-0.0010495036840438843, 0.001704588532447815, 0.35296720266342163, 0.3447054624557495]",
+            "classes": "couch",
+            "scores": "0.62109375"
+          },
+          {
+            "boxes": "[0.13889431953430176, -0.01586538553237915, 0.9748222827911377, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.59765625"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:57:21.999403",
+    "EventProcessedUtcTime": "2021-07-26T14:25:44.0803100Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:57:22.1480000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:57:22.0380000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[-0.0008094608783721924, 0.0014475733041763306, 0.3573169410228729, 0.3484302759170532]",
+            "classes": "couch",
+            "scores": "0.64453125"
+          },
+          {
+            "boxes": "[0.1313977837562561, -0.01586538553237915, 0.967325747013092, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.59765625"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:57:11.707937",
+    "EventProcessedUtcTime": "2021-07-26T14:25:44.0803100Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:57:11.8450000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:57:11.7200000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0025053471326828003, 0.0014475733041763306, 0.3606317639350891, 0.3484302759170532]",
+            "classes": "couch",
+            "scores": "0.6328125"
+          },
+          {
+            "boxes": "[0.11724251508712769, -0.01586538553237915, 0.9664878249168396, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.59765625"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:57:01.443254",
+    "EventProcessedUtcTime": "2021-07-26T14:25:44.0803100Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:57:01.5290000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:57:01.4510000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[-0.0010495036840438843, 0.001704588532447815, 0.35296720266342163, 0.3447054624557495]",
+            "classes": "couch",
+            "scores": "0.6328125"
+          },
+          {
+            "boxes": "[0.12473911046981812, -0.01586538553237915, 0.97398442029953, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.57421875"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:56:51.164530",
+    "EventProcessedUtcTime": "2021-07-26T14:25:44.0803100Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:56:51.2900000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:56:51.1640000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0017262250185012817, 0.004393935203552246, 0.35019147396087646, 0.3420161008834839]",
+            "classes": "couch",
+            "scores": "0.6328125"
+          },
+          {
+            "boxes": "[0.1313977837562561, -0.01586538553237915, 0.967325747013092, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.5859375"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:56:40.878678",
+    "EventProcessedUtcTime": "2021-07-26T14:25:44.0803100Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:56:40.9770000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:56:40.8830000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0017262250185012817, 0.0016400814056396484, 0.35019147396087646, 0.3392622470855713]",
+            "classes": "couch",
+            "scores": "0.64453125"
+          },
+          {
+            "boxes": "[0.12473911046981812, -0.01586538553237915, 0.97398442029953, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.5859375"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:56:30.597993",
+    "EventProcessedUtcTime": "2021-07-26T14:25:44.0803100Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:56:30.7730000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:56:30.6010000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0017043501138687134, 0.004393935203552246, 0.35572105646133423, 0.3420161008834839]",
+            "classes": "couch",
+            "scores": "0.65625"
+          },
+          {
+            "boxes": "[0.13889431953430176, -0.01586538553237915, 0.9748222827911377, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.609375"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:56:20.321688",
+    "EventProcessedUtcTime": "2021-07-26T14:25:44.0803100Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:56:20.5280000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:56:20.3250000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0017262250185012817, 0.004287272691726685, 0.35019147396087646, 0.33661505579948425]",
+            "classes": "couch",
+            "scores": "0.64453125"
+          },
+          {
+            "boxes": "[0.13889431953430176, -0.01586538553237915, 0.9748222827911377, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.5859375"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:56:10.016225",
+    "EventProcessedUtcTime": "2021-07-26T14:25:44.0803100Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:56:10.1430000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:56:10.0170000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0017262250185012817, 0.0016400814056396484, 0.35019147396087646, 0.3392622470855713]",
+            "classes": "couch",
+            "scores": "0.65625"
+          },
+          {
+            "boxes": "[0.12473911046981812, -0.01586538553237915, 0.97398442029953, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.59765625"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:55:59.760914",
+    "EventProcessedUtcTime": "2021-07-26T14:25:43.0630423Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:55:59.8490000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:55:59.7710000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0017262250185012817, 0.0016400814056396484, 0.35019147396087646, 0.3392622470855713]",
+            "classes": "couch",
+            "scores": "0.64453125"
+          },
+          {
+            "boxes": "[0.14544853568077087, -0.01586538553237915, 0.9682680368423462, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.59765625"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:55:49.502317",
+    "EventProcessedUtcTime": "2021-07-26T14:25:43.0630423Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:55:49.5640000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:55:49.5010000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.033034175634384155, 0.0015334337949752808, 0.36015063524246216, 0.33386123180389404]",
+            "classes": "couch",
+            "scores": "0.609375"
+          },
+          {
+            "boxes": "[0.1313977837562561, -0.023361951112747192, 0.967325747013092, 0.9871469736099243]",
+            "classes": "bed",
+            "scores": "0.59765625"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:55:39.223980",
+    "EventProcessedUtcTime": "2021-07-26T14:25:43.0630423Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:55:39.3740000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:55:39.2330000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[-0.0008094608783721924, 0.0014475733041763306, 0.3573169410228729, 0.3484302759170532]",
+            "classes": "couch",
+            "scores": "0.64453125"
+          },
+          {
+            "boxes": "[0.14544853568077087, -0.01586538553237915, 0.9682680368423462, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.5859375"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:55:12.349309",
+    "EventProcessedUtcTime": "2021-07-26T14:25:43.0630423Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:55:12.4860000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:55:12.3610000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0017262250185012817, 0.004393935203552246, 0.35019147396087646, 0.3420161008834839]",
+            "classes": "couch",
+            "scores": "0.66796875"
+          },
+          {
+            "boxes": "[0.13889431953430176, -0.01586538553237915, 0.9748222827911377, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.59765625"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:55:02.062374",
+    "EventProcessedUtcTime": "2021-07-26T14:25:43.0630423Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:55:02.1680000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:55:02.0700000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0017043501138687134, 0.0016400814056396484, 0.35572105646133423, 0.3392622470855713]",
+            "classes": "couch",
+            "scores": "0.65625"
+          },
+          {
+            "boxes": "[0.1313977837562561, -0.023361951112747192, 0.967325747013092, 0.9871469736099243]",
+            "classes": "bed",
+            "scores": "0.59765625"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:54:51.768249",
+    "EventProcessedUtcTime": "2021-07-26T14:25:43.0630423Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:54:51.8810000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:54:51.7720000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0017262250185012817, 0.004393935203552246, 0.35019147396087646, 0.3420161008834839]",
+            "classes": "couch",
+            "scores": "0.64453125"
+          },
+          {
+            "boxes": "[0.1313977837562561, -0.01586538553237915, 0.967325747013092, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.5859375"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:54:41.480955",
+    "EventProcessedUtcTime": "2021-07-26T14:25:43.0630423Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:54:41.6030000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:54:41.4930000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0017262250185012817, 0.004393935203552246, 0.35019147396087646, 0.3420161008834839]",
+            "classes": "couch",
+            "scores": "0.65625"
+          },
+          {
+            "boxes": "[0.12473911046981812, -0.023361951112747192, 0.97398442029953, 0.9871469736099243]",
+            "classes": "bed",
+            "scores": "0.5859375"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:54:31.175438",
+    "EventProcessedUtcTime": "2021-07-26T14:25:43.0630423Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:54:31.2740000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:54:31.1800000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0017262250185012817, 0.004458427429199219, 0.35019147396087646, 0.3474592864513397]",
+            "classes": "couch",
+            "scores": "0.66796875"
+          },
+          {
+            "boxes": "[0.1313977837562561, -0.01586538553237915, 0.967325747013092, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.59765625"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:54:20.899496",
+    "EventProcessedUtcTime": "2021-07-26T14:25:43.0630423Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:54:21.0330000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:54:20.9080000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[-0.0010495036840438843, 0.00714777410030365, 0.35296720266342163, 0.3447699546813965]",
+            "classes": "couch",
+            "scores": "0.65625"
+          },
+          {
+            "boxes": "[0.12473911046981812, -0.01586538553237915, 0.97398442029953, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.5859375"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:54:10.625979",
+    "EventProcessedUtcTime": "2021-07-26T14:25:43.0630423Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:54:10.7740000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:54:10.6340000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[-0.0008094608783721924, 0.0014475733041763306, 0.3573169410228729, 0.3484302759170532]",
+            "classes": "couch",
+            "scores": "0.64453125"
+          },
+          {
+            "boxes": "[0.12473911046981812, -0.01586538553237915, 0.97398442029953, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.5859375"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:54:00.353168",
+    "EventProcessedUtcTime": "2021-07-26T14:25:43.0630423Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:54:00.4780000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:54:00.3530000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[-0.0010495036840438843, 0.004393935203552246, 0.35296720266342163, 0.3420161008834839]",
+            "classes": "couch",
+            "scores": "0.6328125"
+          },
+          {
+            "boxes": "[0.13889431953430176, -0.01586538553237915, 0.9748222827911377, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.609375"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:53:50.068637",
+    "EventProcessedUtcTime": "2021-07-26T14:25:43.0630423Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:53:50.1260000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:53:50.0790000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[-0.0010495036840438843, 0.004393935203552246, 0.35296720266342163, 0.3420161008834839]",
+            "classes": "couch",
+            "scores": "0.64453125"
+          },
+          {
+            "boxes": "[0.13889431953430176, -0.01586538553237915, 0.9748222827911377, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.609375"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:53:39.806299",
+    "EventProcessedUtcTime": "2021-07-26T14:25:42.0458855Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:53:39.8930000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:53:39.8140000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0017262250185012817, 0.004393935203552246, 0.35019147396087646, 0.3420161008834839]",
+            "classes": "couch",
+            "scores": "0.609375"
+          },
+          {
+            "boxes": "[0.1313977837562561, -0.01586538553237915, 0.967325747013092, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.5859375"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:53:29.525672",
+    "EventProcessedUtcTime": "2021-07-26T14:25:42.0458855Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:53:29.5600000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:53:29.5290000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.019584283232688904, 0.0041390955448150635, 0.3625851273536682, 0.33125555515289307]",
+            "classes": "couch",
+            "scores": "0.64453125"
+          },
+          {
+            "boxes": "[0.1313977837562561, -0.023361951112747192, 0.967325747013092, 0.9871469736099243]",
+            "classes": "bed",
+            "scores": "0.59765625"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:53:19.233510",
+    "EventProcessedUtcTime": "2021-07-26T14:25:42.0458855Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:53:19.3090000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:53:19.2470000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0017043501138687134, 0.0016400814056396484, 0.35572105646133423, 0.3392622470855713]",
+            "classes": "couch",
+            "scores": "0.64453125"
+          },
+          {
+            "boxes": "[0.13889431953430176, -0.01586538553237915, 0.9748222827911377, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.59765625"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:53:08.938425",
+    "EventProcessedUtcTime": "2021-07-26T14:25:42.0458855Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:53:09.3190000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:53:08.9430000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[-0.0010495036840438843, 0.004393935203552246, 0.35296720266342163, 0.3420161008834839]",
+            "classes": "couch",
+            "scores": "0.64453125"
+          },
+          {
+            "boxes": "[0.14544853568077087, -0.01586538553237915, 0.9682680368423462, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.5859375"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:52:58.668341",
+    "EventProcessedUtcTime": "2021-07-26T14:25:42.0458855Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:52:58.7720000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:52:58.6630000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.13889431953430176, -0.01586538553237915, 0.9748222827911377, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.62109375"
+          },
+          {
+            "boxes": "[0.033034175634384155, 0.0013852417469024658, 0.36015063524246216, 0.32850170135498047]",
+            "classes": "couch",
+            "scores": "0.609375"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:52:48.389097",
+    "EventProcessedUtcTime": "2021-07-26T14:25:42.0458855Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:52:48.5500000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:52:48.3940000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[-0.0010495036840438843, 0.004393935203552246, 0.35296720266342163, 0.3420161008834839]",
+            "classes": "couch",
+            "scores": "0.6328125"
+          },
+          {
+            "boxes": "[0.1313977837562561, -0.01586538553237915, 0.967325747013092, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.5859375"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:52:38.113361",
+    "EventProcessedUtcTime": "2021-07-26T14:25:42.0458855Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:52:38.2560000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:52:38.1160000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.13889431953430176, -0.01586538553237915, 0.9748222827911377, 0.99464350938797]",
+            "classes": "bed",
+            "scores": "0.609375"
+          },
+          {
+            "boxes": "[-0.0010495036840438843, 0.004393935203552246, 0.35296720266342163, 0.3420161008834839]",
+            "classes": "couch",
+            "scores": "0.59765625"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:52:27.848480",
+    "EventProcessedUtcTime": "2021-07-26T14:25:42.0458855Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:52:27.9120000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:52:27.8500000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0017043501138687134, 0.0016400814056396484, 0.35572105646133423, 0.3392622470855713]",
+            "classes": "couch",
+            "scores": "0.64453125"
+          },
+          {
+            "boxes": "[0.12473911046981812, -0.023361951112747192, 0.97398442029953, 0.9871469736099243]",
+            "classes": "bed",
+            "scores": "0.59765625"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:52:17.575468",
+    "EventProcessedUtcTime": "2021-07-26T14:25:42.0458855Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:52:17.6680000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:52:17.5900000Z",
+      "StreamId": null
+    }
+  },
+  {
+    "_unmodeleddata": {
+      "sensors": {
+        "__t": "c",
+        "video": [
+          {
+            "boxes": "[0.0025053471326828003, 0.0014475733041763306, 0.3606317639350891, 0.3484302759170532]",
+            "classes": "couch",
+            "scores": "0.64453125"
+          },
+          {
+            "boxes": "[0.13223564624786377, -0.023361951112747192, 0.9814809560775757, 0.9871469736099243]",
+            "classes": "bed",
+            "scores": "0.59765625"
+          }
+        ]
+      }
+    },
+    "_eventtype": "Telemetry",
+    "_timestamp": "07/26/2021, 15:52:07.309795",
+    "EventProcessedUtcTime": "2021-07-26T14:25:42.0458855Z",
+    "PartitionId": 0,
+    "EventEnqueuedUtcTime": "2021-07-26T13:52:07.7480000Z",
+    "IoTHub": {
+      "MessageId": null,
+      "CorrelationId": null,
+      "ConnectionDeviceId": "iotedge-aidemo-dev-westeu-001",
+      "ConnectionDeviceGenerationId": "637607268247344024",
+      "EnqueuedTime": "2021-07-26T13:52:07.3200000Z",
+      "StreamId": null
+    }
+  }
+]
