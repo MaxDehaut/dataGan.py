@@ -1,15 +1,30 @@
-#  Weight Of Evidence
+# -----------
+# - CONTENT -
+# -----------
+
+# Imports
+# Weight of evidence
+# Plotting
+
+# ------------------------------
+
+# -----------
+# - IMPORTS -
+# -----------
 
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-import scipy.stats as stats
-import seaborn as sns
 
 from seaborn import axes_style
 
 
-def woe_eval(df, feature_name, y_df, bins=2):
+# ----------------------
+# - WEIGHT OF EVIDENCE -
+# ----------------------
+
+def eval_woe(df, feature_name, y_df, bins=2):
+    """Evaluate weight of evidence"""
     if (feature_name in df.select_dtypes(include='number').columns):
         bin_feature_name = feature_name + '_bin'
         df[bin_feature_name] = pd.cut(df[feature_name], bins)
@@ -33,38 +48,46 @@ def woe_eval(df, feature_name, y_df, bins=2):
     df['WoE'] = df['WoE'].replace([np.inf, -np.inf], np.nan).fillna(0)
     df = df.sort_values(['WoE'])
     df = df.reset_index(drop=True)
-    # Calculates the difference of a Dataframe element compared with another element in the Dataframe (default is element in previous row)
+
+    # Calculates the difference of a Dataframe element compared with 
+    # another element in the Dataframe (default is element in previous row)
     df['diff_prob_event'] = df['prob_event'].diff().abs()
+
     df['diff_WoE'] = df['WoE'].diff().abs()
     df['IV'] = (df['prob_nevent_only'] - df['prob_event_only']) * df['WoE']
 
     return df
 
-def bar_by_woe(df_WoE, x_rotation=0):
+# ------------
+# - PLOTTING -
+# ------------
+
+
+def plot_woe_bar(df_woe, x_rotation=0):
+    """Plot weight of evidence bar graph"""
     with axes_style({'axes.facecolor': 'gainsboro', 'grid.color': 'white'}):
-        x = np.array(df_WoE.iloc[:, 0].apply(str))
-        y = df_WoE['WoE']
-        
+        x = np.array(df_woe.iloc[:, 0].apply(str))
+        y = df_woe['WoE']
+
         mask_y_bz = y < 0
         mask_y_az = y >= 0
 
         plt.figure(figsize=(18, 6))
         plt.bar(x[mask_y_bz], y[mask_y_bz], color="lightcoral")
         plt.bar(x[mask_y_az], y[mask_y_az], color="steelblue")
-        plt.xlabel(df_WoE.columns[0].replace('_bin',''))
+        plt.xlabel(df_woe.columns[0].replace('_bin',''))
         plt.ylabel('Weight of Evidence')
-#        plt.title(str('Weight of Evidence by ' + df_WoE.columns[0]))
         plt.xticks(rotation=x_rotation)
 
 
-def line_by_woe(df_WoE, x_rotation=0):
+def plot_woe_line(df_woe, x_rotation=0):
+    """Plot weight of evidence line graph"""
     with axes_style({'axes.facecolor': 'gainsboro', 'grid.color': 'white'}):
-        x = np.array(df_WoE.iloc[:, 0].apply(str))
-        y = df_WoE['WoE']
+        x = np.array(df_woe.iloc[:, 0].apply(str))
+        y = df_woe['WoE']
 
         plt.figure(figsize=(18, 6))
         plt.plot(x, y, marker='o', linestyle='--', color='steelblue')
-        plt.xlabel(df_WoE.columns[0].replace('_bin',''))
+        plt.xlabel(df_woe.columns[0].replace('_bin',''))
         plt.ylabel('Weight of Evidence')
-#        plt.title(str('Weight of Evidence by ' + df_WoE.columns[0]))
         plt.xticks(rotation=x_rotation)

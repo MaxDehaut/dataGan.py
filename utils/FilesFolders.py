@@ -1,34 +1,60 @@
-# Import libraries
-import os
+# -----------
+# - CONTENT -
+# -----------
+
+# Imports
+# Files
+# Folders
+
+# ------------------------------
+
+# -----------
+# - IMPORTS -
+# -----------
+
 import pathlib
 
-# Methods
-#########
+# ---------
+# - FILES -
+# ---------
 
-# Retrieves the list of files with a directory
-def getFilesInDirectory(pathToDir, extension = "*.*"):
-    if not isinstance(pathToDir, pathlib.PurePath):
-        pathToDir = pathlib.Path(pathToDir)
-    return sorted(list(pathToDir.glob(extension)))
 
-# Returns list of files from a folder
-def getListOfFiles(pathToDir, extension = "*.*"):
-    raw_files = getFilesInDirectory(pathToDir, extension)
-    
+def get_files(pathtodir, extension="*.*"):
+    """Retrieves the list of files with a directory"""
+    if not isinstance(pathtodir, pathlib.PurePath):
+        pathtodir = pathlib.Path(pathtodir)
+    return sorted(list(pathtodir.glob(extension)))
+
+
+def get_file_list(pathtodir, extension="*.*"):
+    """Returns list of files from a folder"""
+    raw_files = get_files(pathtodir, extension)
+
     files = []
     for file_path in raw_files:
-        files.append( file_path.name )
+        files.append(file_path.name)
 
     return files
 
-# Retrieves the list of folders with a directory
-def getFoldersInDirectory(pathToDir, prefix = ""):
-    if not isinstance(pathToDir, pathlib.PurePath):
-        pathToDir = pathlib.Path(pathToDir)
-    return sorted([fld for fld in pathToDir.iterdir() if fld.is_dir() and not fld.name.lower().startswith(prefix)])
 
-# Retrieves the list of folders with a directory
-def getFolderNamesInDirectory(pathToDir, prefix = ""):
-    if not isinstance(pathToDir, pathlib.PurePath):
-        pathToDir = pathlib.Path(pathToDir)
-    return sorted([fld.name for fld in pathToDir.iterdir() if fld.is_dir() and not fld.name.lower().startswith(prefix)])
+# -----------
+# - FOLDERS -
+# -----------
+
+
+def get_folders(pathtodir, prefix=""):
+    """Retrieves the list of folders with a directory."""
+    if not isinstance(pathtodir, pathlib.PurePath):
+        pathtodir = pathlib.Path(pathtodir)
+    return sorted(
+        [fld for fld in pathtodir.iterdir() 
+         if fld.is_dir() and not fld.name.lower().startswith(prefix)])
+
+
+def get_folder_names(pathtodir, prefix=""):
+    """Retrieves the list of folders with a directory"""
+    if not isinstance(pathtodir, pathlib.PurePath):
+        pathtodir = pathlib.Path(pathtodir)
+    return sorted(
+        [fld.name for fld in pathtodir.iterdir() 
+         if fld.is_dir() and not fld.name.lower().startswith(prefix)])
