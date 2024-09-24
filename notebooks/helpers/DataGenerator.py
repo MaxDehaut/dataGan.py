@@ -9,6 +9,12 @@
 
 # ------------------------------
 
+# --------------
+# - References -
+# --------------
+# [Synthetic Data Vault](https://docs.sdv.dev/sdv)
+
+
 # -----------
 # - IMPORTS -
 # -----------
@@ -27,76 +33,79 @@ from sdv.evaluation.single_table import run_diagnostic, evaluate_quality
 class GanGenerator:
     """This Generator ..."""
     
-    def get_metadata(self, dataframe):
+    def __init__(self, dataframe):
+        self.dataframe = dataframe
+
+    def get_metadata(self):
         """"""
         metadata = SingleTableMetadata()
-        metadata.detect_from_dataframe(dataframe)
+        metadata.detect_from_dataframe(self.dataframe)
         return metadata
     
     # -------
     # Fitting models
     # -------
-    def get_df_copula(self, dataframe, size):
+    def get_df_copula(self, size):
         """"""
-        metadata = get_metadata(dataframe)
+        metadata = self.get_metadata()
         cop_synthesizer = CopulaGANSynthesizer(
             metadata,
             enforce_min_max_values=True,
             enforce_rounding=False,
             epochs=500,
-            verbose=True
+            verbose=False
         )
-        cop_synthesizer.fit(dataframe)
+        cop_synthesizer.fit(self.dataframe)
         return cop_synthesizer.sample(size)
 
 
-    def get_df_ctgan(self, dataframe, size):
-        metadata = get_metadata(dataframe)
+    def get_df_ctgan(self, size):
+        metadata = self.get_metadata(dataframe)
         ctg_synthesizer = CTGANSynthesizer(
             metadata,
             enforce_rounding=False,
             epochs=500,
-            verbose=True
+            verbose=False
         )
-        ctg_synthesizer.fit(dataframe)
+        ctg_synthesizer.fit(self.dataframe)
         return ctg_synthesizer.sample(num_rows=size)
 
 
-    def get_df_gaussian(self, dataframe, size):
-        metadata = get_metadata(dataframe)
+    def get_df_gaussian(self, size):
+        metadata = self.get_metadata()
         gcop_synthesizer = GaussianCopulaSynthesizer(metadata)
-        gcop_synthesizer.fit(dataframe)
+        gcop_synthesizer.fit(self.dataframe)
         return gcop_synthesizer.sample(size)
 
 
-    def get_df_tvae(self, dataframe, size):
-        metadata = get_metadata(dataframe)
+    def get_df_tvae(self, size):
+        metadata = self.get_metadata()
         tvae_synthesizer = TVAESynthesizer(
             metadata,
             enforce_min_max_values=True,
             enforce_rounding=False,
             epochs=500
         )
-        tvae_synthesizer.fit(dataframe)
+        tvae_synthesizer.fit(self.dataframe)
         return tvae_synthesizer.sample(size)
 
 
     # -------
     # Metrics
     # -------
-    def get_metrics(self, dataframe, gaussiandata):
-        metadata = get_metadata(dataframe)
+    def get_metrics(self, gandata):
+        metadata = self.get_metadata()
 
         diagnostic_report = run_diagnostic(
-            real_data=dataframe,
-            synthetic_data=gaussiandata,
+            real_data=self.dataframe,
+            synthetic_data=gandata,
             metadata=metadata
         )
 
         quality_report = evaluate_quality(
-            real_data=dataframe,
-            synthetic_data=gaussiandata,
-            metadata=self.metadata
+            real_data=self.dataframe,
+            synthetic_data=gandata,
+            metadata=metadata
         )
         return diagnostic_report, quality_report
 
