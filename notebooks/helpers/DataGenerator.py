@@ -3,7 +3,9 @@
 # -----------
 
 # Imports
-# NumberRandomizer
+# DatasetGenerator
+# GANGenerazor
+# NumberGenerator
 
 # ------------------------------
 
@@ -13,11 +15,90 @@
 import warnings
 from enum import Enum
 
-import numpy as np
-import pandas as pd
-from scipy.stats import gamma
+from sdv.metadata import SingleTableMetadata
+from sdv.single_table import CopulaGANSynthesizer, CTGANSynthesizer, GaussianCopulaSynthesizer, TVAESynthesizer
+from sdv.evaluation.single_table import run_diagnostic, evaluate_quality
 
-from CastConverter import convert_floats_to_ints
+
+# --------------------
+# - GABGENERATOR -
+# --------------------
+
+class GanGenerator:
+    """This Generator ..."""
+    
+    def get_metadata(self, dataframe):
+        """"""
+        metadata = SingleTableMetadata()
+        metadata.detect_from_dataframe(dataframe)
+        return metadata
+    
+    # -------
+    # Fitting models
+    # -------
+    def get_df_copula(self, dataframe, size):
+        """"""
+        metadata = get_metadata(dataframe)
+        cop_synthesizer = CopulaGANSynthesizer(
+            metadata,
+            enforce_min_max_values=True,
+            enforce_rounding=False,
+            epochs=500,
+            verbose=True
+        )
+        cop_synthesizer.fit(dataframe)
+        return cop_synthesizer.sample(size)
+
+
+    def get_df_ctgan(self, dataframe, size):
+        metadata = get_metadata(dataframe)
+        ctg_synthesizer = CTGANSynthesizer(
+            metadata,
+            enforce_rounding=False,
+            epochs=500,
+            verbose=True
+        )
+        ctg_synthesizer.fit(dataframe)
+        return ctg_synthesizer.sample(num_rows=size)
+
+
+    def get_df_gaussian(self, dataframe, size):
+        metadata = get_metadata(dataframe)
+        gcop_synthesizer = GaussianCopulaSynthesizer(metadata)
+        gcop_synthesizer.fit(dataframe)
+        return gcop_synthesizer.sample(size)
+
+
+    def get_df_tvae(self, dataframe, size):
+        metadata = get_metadata(dataframe)
+        tvae_synthesizer = TVAESynthesizer(
+            metadata,
+            enforce_min_max_values=True,
+            enforce_rounding=False,
+            epochs=500
+        )
+        tvae_synthesizer.fit(dataframe)
+        return tvae_synthesizer.sample(size)
+
+
+    # -------
+    # Metrics
+    # -------
+    def get_metrics(self, dataframe, gaussiandata):
+        metadata = get_metadata(dataframe)
+
+        diagnostic_report = run_diagnostic(
+            real_data=dataframe,
+            synthetic_data=gaussiandata,
+            metadata=metadata
+        )
+
+        quality_report = evaluate_quality(
+            real_data=dataframe,
+            synthetic_data=gaussiandata,
+            metadata=self.metadata
+        )
+        return diagnostic_report, quality_report
 
 
 # --------------------
@@ -25,7 +106,7 @@ from CastConverter import convert_floats_to_ints
 # --------------------
 
 class DatasetGenerator:
-    """This randomizer ..."""
+    """This Generator ..."""
     
     class FieldType(Enum):
         BOOLEAN = 1
@@ -34,14 +115,14 @@ class DatasetGenerator:
 
     def get_dataframe(self, arr_params, size):
         """Returns a dataset"""
-        dtr = DatetimeRandomizer()
-        nr = NumberRandomizer()
+        dtr = DatetimeGenerator()
+        nr = NumberGenerator()
         df_return = pd.DataFrame()
 
         for p in arr_params:
             if 'field' in p and 'fieldtype' in p:
                 if p['fieldtype'] == DatasetGenerator.FieldType.BOOLEAN:
-                    tmp_categories = nr.get_numbers(distribution=NumberRandomizer.Distribution.WEIGHTED,
+                    tmp_categories = nr.get_numbers(distribution=NumberGenerator.Distribution.WEIGHTED,
                                                 size=size,
                                                 params=p)
                     categories = convert_floats_to_ints(tmp_categories)
@@ -63,11 +144,11 @@ class DatasetGenerator:
 
 
 # ----------------------
-# - DATETIMERANDOMIZER -
+# - DATETIMEGENERATOR -
 # ----------------------
 
-class DatetimeRandomizer:
-    """This randomizer ..."""
+class DatetimeGenerator:
+    """This Generator ..."""
 
     def get_timestamps(self, field_name, params):
         """Receives timestamp specifications and creates and outputs a pandas df of type timestamp"""
@@ -91,11 +172,11 @@ class DatetimeRandomizer:
         return None
 
 # --------------------
-# - NUMBERRANDOMIZER -
+# - NUMBERGENERATOR -
 # --------------------
 
-class NumberRandomizer:
-    """This randomizer takes in input for the paramaters depending on the distribution selected.
+class NumberGenerator:
+    """This Generator takes in input for the paramaters depending on the distribution selected.
     It also accepts min and max arguments for the output of the data set in a 'data smapling' 
     method similar to SDV's "reject_sampling" method. Thanks to numpy's extremely efficient array
     creator, the sampling method used barely takes more time."""
@@ -124,7 +205,7 @@ class NumberRandomizer:
         ZIPF = 21
 
     # --------------
-    # - RANDOMIZER -
+    # - Generator -
     # --------------
     def get_numbers(self, distribution, size, params):
         """Returns an array of numbers following a specific distribution"""
@@ -143,37 +224,37 @@ class NumberRandomizer:
                 return None
 
         # Distribution generation loop
-        if distribution == NumberRandomizer.Distribution.CHISQUARE:
+        if distribution == NumberGenerator.Distribution.CHISQUARE:
             if 'df' in params:
                 new_data = np.append(new_data, np.random.chisquare(params['df'], size=size))
 
-        elif distribution == NumberRandomizer.Distribution.EXPONENTIAL:
+        elif distribution == NumberGenerator.Distribution.EXPONENTIAL:
             if 'scale' in params:
                 new_data = np.append(new_data, np.random.exponential(params['scale'], size=size))
 
-        elif distribution == NumberRandomizer.Distribution.GAMMA:
+        elif distribution == NumberGenerator.Distribution.GAMMA:
             if 'shape' in params:
                 new_data = np.append(new_data, gamma.rvs(params['shape'], size=size))
 
-        elif distribution == NumberRandomizer.Distribution.GUMBEL:
+        elif distribution == NumberGenerator.Distribution.GUMBEL:
             if 'mu' in params and 'beta' in params:
                 new_data = np.append(new_data, np.random.gumbel(params['mu'], params['beta'], size=size))
 
-        elif distribution == NumberRandomizer.Distribution.LAPLACE:
+        elif distribution == NumberGenerator.Distribution.LAPLACE:
             if 'loc' in params and 'scale' in params:
                 new_data = np.append(new_data, np.random.laplace(params['loc'], params['scale'], size=size))
 
-        elif distribution == NumberRandomizer.Distribution.LOGISTIC:
+        elif distribution == NumberGenerator.Distribution.LOGISTIC:
             if 'loc' in params and 'scale' in params:
                 new_data = np.append(new_data, np.random.logistic(params['loc'], params['scale'], size=size))
 
-        elif distribution == NumberRandomizer.Distribution.NONCENTRALCHISQUARE:
+        elif distribution == NumberGenerator.Distribution.NONCENTRALCHISQUARE:
             if 'df' in params and 'nonc' in params:
                 new_data = np.append(new_data, np.random.noncentral_chisquare(params['df'],
                                                                             params['nonc'],
                                                                             size=size))
 
-        elif distribution == NumberRandomizer.Distribution.NONCENTRALF:
+        elif distribution == NumberGenerator.Distribution.NONCENTRALF:
             if 'dfnum' in params and 'dfden' in params and 'nonc' in params:
                 new_data = np.append(new_data, 
                                     np.random.noncentral_f(params['dfnum'],
@@ -181,32 +262,32 @@ class NumberRandomizer:
                                                             params['nonc'],
                                                             size=size))
 
-        elif distribution == NumberRandomizer.Distribution.NORMAL:
+        elif distribution == NumberGenerator.Distribution.NORMAL:
             if 'mean' in params and 'std' in params:
                 new_data = np.append(new_data, 
                                     np.random.normal(params['mean'], params['std'], size=size))
 
-        elif distribution == NumberRandomizer.Distribution.PARETO:
+        elif distribution == NumberGenerator.Distribution.PARETO:
             if 'shape' in params:
                 new_data = np.append(new_data, np.random.pareto(params['shape'], size=size))
 
-        elif distribution == NumberRandomizer.Distribution.POISSON:
+        elif distribution == NumberGenerator.Distribution.POISSON:
             if 'lam' in params:
                 new_data = np.append(new_data, np.random.poisson(params['lam'], size=size))
 
-        elif distribution == NumberRandomizer.Distribution.POWER:
+        elif distribution == NumberGenerator.Distribution.POWER:
             if 'a' in params:
                 new_data = np.append(new_data, np.random.power(params['a'], size=size))
 
-        elif distribution == NumberRandomizer.Distribution.RAYLEIGH:
+        elif distribution == NumberGenerator.Distribution.RAYLEIGH:
             if 'scale' in params:
                 new_data = np.append(new_data, np.random.rayleigh(params['scale'], size=size))
 
-        elif distribution == NumberRandomizer.Distribution.STDT:
+        elif distribution == NumberGenerator.Distribution.STDT:
             if 'df' in params:
                 new_data = np.append(new_data, np.random.standard_t(params['df'], size=size))
 
-        elif distribution == NumberRandomizer.Distribution.TRIANGULAR:
+        elif distribution == NumberGenerator.Distribution.TRIANGULAR:
             if 'left' in params and 'mode' in params and 'right' in params:
                 new_data = np.append(new_data,
                                     np.random.triangular(params['left'],
@@ -214,30 +295,30 @@ class NumberRandomizer:
                                                         params['right'],
                                                         size=size))
 
-        elif distribution == NumberRandomizer.Distribution.UNIFORM:
+        elif distribution == NumberGenerator.Distribution.UNIFORM:
             if min and max:
                 new_data = np.append(new_data, np.random.uniform(min, max, size=size))
 
-        elif distribution == NumberRandomizer.Distribution.VONMISES:
+        elif distribution == NumberGenerator.Distribution.VONMISES:
             if 'mu' in params and 'kappa' in params:
                 new_data = np.append(new_data, np.random.vonmises(params['mu'], params['kappa'], size=size))
 
-        elif distribution == NumberRandomizer.Distribution.WALD:
+        elif distribution == NumberGenerator.Distribution.WALD:
             if 'mean' in params and 'scale' in params:
                 new_data = np.append(new_data, np.random.wald(params['mean'], params['scale'], size=size))
 
-        elif distribution == NumberRandomizer.Distribution.WEIBULL:
+        elif distribution == NumberGenerator.Distribution.WEIBULL:
             if 'shape' in params:
                 new_data = np.append(new_data, np.random.weibull(params['shape'], size=size))
 
-        elif distribution == NumberRandomizer.Distribution.WEIGHTED:
+        elif distribution == NumberGenerator.Distribution.WEIGHTED:
             if 'a' in params and 'weights' in params:
                 new_data = np.append(new_data, 
                                     np.random.choice(params['a'],
                                                     p=params['weights'],
                                                     size=size))
 
-        elif distribution == NumberRandomizer.Distribution.ZIPF:
+        elif distribution == NumberGenerator.Distribution.ZIPF:
             if 'a' in params:
                 new_data = np.append(new_data, np.random.zipf(params['a'], size=size))
 
