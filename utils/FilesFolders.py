@@ -1,23 +1,4 @@
-# -----------
-# - CONTENT -
-# -----------
-
-# Imports
-# Files
-# Folders
-
-# ------------------------------
-
-# -----------
-# - IMPORTS -
-# -----------
-
 import pathlib
-
-# ---------
-# - FILES -
-# ---------
-
 
 def get_files(pathtodir, extension="*.*"):
     """Retrieves the list of files with a directory"""
